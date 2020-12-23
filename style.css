@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+.attribute{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+:root{
+    /*primary*/
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    /*Neutral*/
+    --darkGrayishBlue: hsl(210, 10%, 33%);
+    --grayishBlue: hsl(201, 11%, 66%);
+}
+
+header{
+  height: 20vh;
+  width: 100vw;
+  
+}
+
+.header__background{
+    width: 100vw;
+    height: 25vh;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.header__content{
+    text-align: center;
+    margin-top: -5rem;
+}
+.logo{
+    width: 5rem;
+    margin: auto;
+}
+.call-to-action{
+    margin-top: 10rem;
+    justify-content: center !important;
+}
+.button{
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+.ios-button{
+    background: var(--strongCyan);
+}
+.ios-button:hover{
+    background: var(--lightBlue);
+}
+.mac-button{
+    background: var(--lightBlue);
+}
+.mac-button:hover{
+    background: var(--strongCyan);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+.snippets__top {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.snippets__content{
+   width: 80rem;
+   justify-content: unset;
+   gap: 7.5rem;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+.features{
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20vw;
+}
+
+.paragraph{
+    color: var(--grayishBlue);
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+
+.clipboard{
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 0;
+}
+.clipboard-image{
+    margin-top: 2.5rem;
+}
+
+/*workflow*/
+.workflow{
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 7.5rem;
+    text-align: center;
+}
+.workflow__top{
+    margin-bottom: 3rem;
+}
+
+.workflow-content img{
+    width: 30px;
+}
+.workflow-content h2{
+    margin: 2rem 0;
+}
+.workflow-content .paragraph{
+    line-height: 2rem;
+}
+
+/*companies*/
+.companies{
+    width: 80vw;
+    margin: auto;
+    padding: 5rem 0;
+    flex-wrap: wrap;
+}
+.companies img{
+    width: 10rem;
+}
+/*download*/
+.download{
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 0;
+
+}
+/*footer*/
+.footer{
+    width: 100vw;
+    background: #f5f6f8;
+    min-height: 10vh;
+    padding: 2rem 0;
+}
+.footer__content{
+    width: 80vw;
+    margin: auto;
+}
+.footer__social a{
+    width: 30px;
+    float: right;
+    margin-left: 1rem;
+}
+.footer__social{
+    flex: 1;
+    
+}
+.footer__logo{
+    width: 75px;
+}
+.footer__links{
+    margin-left: 10rem;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.footer__links a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    color: #000;
+}
+.footer__links a:hover{
+    color: var(--strongCyan)
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    main{
+        margin-top: 15rem;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .call-to-action{
+        gap: .75rem;
+        margin-top: 15rem;
+    }
+    .download__button{
+        gap: .75rem;
+    }
+    .button{
+        padding: 1.25rem 5rem;
+    }
+    .snippets__content{
+        width: 80vw;
+        align-items: center;
+        gap: 1rem;
+     }
+    .features{
+        text-align: center;
+        width: 80vw;
+    }
+    .footer__links{
+        margin-left: 0rem;
+    }
+    .footer__links a{
+        font-size: 1rem;
+    }
+    .companies img{
+        width: 100px;
+        margin: 2rem 0;
+    }
+    section, header{
+        width: 80vw;
+        margin: auto;
+    }
+  }
